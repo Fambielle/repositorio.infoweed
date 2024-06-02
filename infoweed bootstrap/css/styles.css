@@ -42,25 +42,6 @@ p {
     padding-inline-end: 30px;
 }
 
-.cuadros-container {
-    width: 100%;
-    height: 50%;
-    background-color: #030e06;
-    border-top: 5px solid #ffc107;
-}
-
-.cuadros {
-    border: 3px solid #ffc107;;
-    background-color: #030e06;
-    height: 100px;
-    width: 200px;
-    
-}
-
-.cuadros:hover {
-    border-color: rgb(19, 156, 32);
-    border: 6px solid rgb(19, 156, 32);
-}
 
 a {
     color: #ffc107;
@@ -69,6 +50,17 @@ a {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+}
+
+a:hover {
+    color: rgb(19, 156, 32) !important;
+    text-decoration: none;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 550px; /* ajusta la altura según lo necesites */
+    mask-image: radial-gradient(circle at center, white 60%, transparent 90%);
 }
 
 
@@ -121,3 +113,16 @@ h1, h2
     color: #ffc107; /* Color de los títulos */
 }
 
+.custom-toggler .navbar-toggler-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.custom-toggler .navbar-toggler-icon .line {
+    display: block;
+    width: 25px;
+    height: 5px;
+    position: relative;
+    margin: 4px;
+    background: #ffc107;
+}
