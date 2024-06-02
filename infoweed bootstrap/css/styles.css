@@ -120,7 +120,4 @@ h1, h2
 {
     color: #ffc107; /* Color de los títulos */
 }
-a:hover {
-    color: rgb(19, 156, 32) !important;
-    text-decoration: none;
-}
+
