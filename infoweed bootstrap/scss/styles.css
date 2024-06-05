@@ -1,0 +1,112 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #030e06;
+  width: 100%;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  font-style: normal;
+  color: #ffc107;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.main-index {
+  background-image: url(https://fondosmil.com/fondo/12985.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: rgb(245, 216, 179);
+  text-align: center;
+  font-size: 30px;
+  padding-inline-start: 30px;
+  padding-inline-end: 30px;
+}
+
+a {
+  color: #ffc107;
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+a:hover {
+  color: rgb(19, 156, 32) !important;
+  text-decoration: none;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 550px; /* ajusta la altura según lo necesites */
+  mask-image: radial-gradient(circle at center, white 60%, transparent 90%);
+}
+
+footer {
+  background-color: #030e06;
+  width: 100%;
+  height: 20%;
+  border-top: 5px solid #ffc107;
+}
+
+@keyframes colores {
+  20% {
+    filter: hue-rotate(55deg);
+  }
+}
+.main-legalidad {
+  background-image: url(https://fondosmil.com/fondo/12985.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: #030e06; /* Color de fondo oscuro */
+  color: white; /* Color de texto */
+}
+
+.parrafo-legalidad {
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Kanit", sans-serif;
+}
+
+h1, h2 {
+  color: #ffc107; /* Color de los títulos */
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-color: transparent;
+  border: none;
+}
+.custom-toggler .navbar-toggler-icon .line {
+  display: block;
+  width: 25px;
+  height: 5px;
+  position: relative;
+  margin: 4px;
+  background: #ffc107;
+}
+
+/*# sourceMappingURL=styles.css.map */
