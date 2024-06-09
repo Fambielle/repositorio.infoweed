@@ -1,116 +1,154 @@
+
 @import 'variables';
 
-
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $background-color;
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+header, footer {
+  background-color: $background-color;
+  width: 100%;
 }
 
 header {
-    background-color: $fondo-color;
-    width: $anchomaximo;
-}
-
-h1 {
-    font-size: 100px;
-}
-
-h2 {
-    font-family: $font-kanit;
-    font-weight: 300;
-    font-size: 60px;
-    font-style: normal;
-    color: $amarillo-color;
-    text-align: center;
-    padding-top: 1%;
+  border-top: 5px solid $highlight-color;
 }
 
 .main-index {
-    background-image: url(https://fondosmil.com/fondo/12985.jpg);
+    background-image: url(../assets/fondo.webp);
     background-size: cover;
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
-}
-
-p {
-    font-family: $font-roboto;
-    font-weight: 100;
+    height: 100%;
+  
+    h2 {
+      text-align: left;
+      padding-inline-start: 30px;
+      padding-inline-end: 30px;
+      color: $font-color !important;
+      text-shadow: 0px 2px 1px $shadow-color;
+    }
+  }
+  
+  p {
+    font-family: $font-family-secondary, sans-serif;
+    font-weight: 300;
     font-style: normal;
-    color: rgb(245, 216, 179);
+    color: $font-color;
     text-align: center;
     font-size: 30px;
     padding-inline-start: 30px;
     padding-inline-end: 30px;
-}
+    text-align: left;
+    font-size: 18px;
+    text-shadow: 0px 2px 1px $shadow-color;
+  }
 
-a {
-    color: $amarillo-color;
-    font-family: $font-kanit;
-    font-size: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-
-    &:hover {
-        color: $hover-color !important;
-        text-decoration: none;
-    }
-}
-
-.carousel-item img {
-    object-fit: cover;
-    height: 550px; /* ajusta la altura según lo necesites */
-    mask-image: radial-gradient(circle at center, white 60%, transparent 90%);
-}
-
-footer {
-    background-color: $fondo-color;
-    width: $anchomaximo;
-    height: 20%;
-    border-top: 5px solid $amarillo-color;
-}
-
-@keyframes colores {
-    20% {
-        filter: hue-rotate(55deg);
-    }
-}
-
-// Estilos para legalidad.html
-.main-legalidad {
-    background-image: url(https://fondosmil.com/fondo/12985.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-body {
-    background-color: $fondo-color; /* Color de fondo oscuro */
-    color: white; /* Color de texto */
-}
-
-.parrafo-legalidad {
-    font-size: 25px;
+h1, h2 {
+  color: $highlight-color;
+  font-family: $font-family-primary;
 }
 
 h1 {
-    font-size: 80px;
-    font-family: $font-kanit;
+  font-size: 80px;
+  animation-name: slidein;
+  animation-duration: 3s;
 }
 
-h1, h2 {
-    color: $amarillo-color; /* Color de los títulos */
+h2 {
+  font-weight: 300;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 1%;
+}
+
+a {
+  color: $highlight-color;
+  font-family: $font-family-primary;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+
+  &:hover {
+    color: $hover-color !important;
+    text-decoration: none;
+  }
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 550px;
+  mask-image: radial-gradient(circle at center, white 60%, transparent 90%);
+}
+
+footer {
+  height: 20%;
+  border-top: 5px solid $highlight-color;
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 
-    .line {
-        display: block;
-        width: 25px;
-        height: 5px;
-        position: relative;
-        margin: 4px;
-        background: $amarillo-color;
+  .line {
+    display: block;
+    width: 25px;
+    height: 5px;
+    position: relative;
+    margin: 4px;
+    background: $highlight-color;
+  }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3.5rem; /* Reducir el tamaño del texto del título en pantallas pequeñas */
     }
+    h2 {
+    font-size: 2.5rem; 
+   }
+}
+
+/* Animacion titulos */
+@keyframes slidein {
+  0% {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+// Estilos de legalidad.html
+.main-legalidad {
+  background-image: url(../assets/fondo.webp);
+  background-size: cover;
+  background-position: center right;
+  width: 100%;
+}
+
+.parrafo-legalidad {
+  font-size: 25px;
+}
+
+// Estilos de infogeneral.html 
+
+.main-general{
+    background-image: url(../assets/fondo.webp);
+    background-size: cover;
+    width: 100%;
+}
+
+.carousel-section{
+    background-color: $background-color;
 }
