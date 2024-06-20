@@ -142,4 +142,16 @@ footer {
   background-color: #030e06;
 }
 
+ul li {
+  color: rgb(220, 219, 217); /* Esto hace que el texto de las listas sea blanco */
+}
+
+.main-riesgos {
+  background-image: url(../assets/fondo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */

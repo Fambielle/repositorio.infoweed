@@ -152,3 +152,20 @@ footer {
 .carousel-section{
     background-color: $background-color;
 }
+
+// Estilos de riesgos.html
+
+ul {
+  li {
+      color: $font-color; /* Esto hace que el texto de las listas sea blanco */
+  }
+}
+
+.main-riesgos
+{
+  background-image: url(../assets/fondo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
